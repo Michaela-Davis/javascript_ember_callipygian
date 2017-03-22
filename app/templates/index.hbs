@@ -3,6 +3,6 @@
 
 {{#each model as |post|}}
   <div class="panel">
-    {{post-detail post=post}}
+    {{post-detail post=post update='update' destroyPost="destroyPost"}}
   </div>
 {{/each}}

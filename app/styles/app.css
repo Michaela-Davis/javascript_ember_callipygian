@@ -58,11 +58,11 @@ img {
   cursor: pointer;
 }
 
-.hide-post, .delete-post {
+.hide-post, .delete-post, .update-post, .cancel-update {
   text-decoration: underline;
 }
 
-.hide-post:hover, .delete-post:hover {
+.hide-post:hover, .delete-post:hover, .update-post:hover, .cancel-update:hover {
   cursor: pointer;
   color: red;
   text-decoration: underline;

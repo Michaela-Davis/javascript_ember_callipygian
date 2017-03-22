@@ -1,0 +1,19 @@
+{{#if isUpdateShowing}}
+  <form>
+    <label for="title">Post Title</label>
+    {{input value=title id="title" placeholder=post.title}}
+    <br><br>
+    <label for="username">Username</label>
+    {{input value=username id="username" placeholder=post.username}}
+    <br><br>
+    <label for="caption">Image Caption</label>
+    {{input value=caption id="caption" placeholder=post.caption}}
+    <br><br>
+    <label for="imageURL">URL to image</label>
+    {{input value=imageURL id="imageURL" placeholder=post.imageURL}}
+    <br><br>
+    <span class="update-post" {{action 'update' post}}>Update</span>&nbsp;&nbsp;&nbsp;<span class="cancel-update" {{action 'hideUpdateForm'}}>Cancel</span>
+  </form>
+{{else}}
+  <span class="update-post" {{action 'showUpdateForm'}}>update</span>
+{{/if}}
