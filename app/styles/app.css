@@ -14,7 +14,7 @@ img {
   max-height: 400px;
 }
 
-#title {
+#blog-title {
   float: right;
   margin-right: 5%;
   background-color: #511A1A;
@@ -66,4 +66,16 @@ img {
   cursor: pointer;
   color: red;
   text-decoration: underline;
+}
+
+.button {
+  background-color: black;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+input {
+  color: black;
 }

@@ -1,0 +1,17 @@
+<h2>Complete the following form to add a post!</h2>
+
+  <form>
+    <label for="title">Post Title:</label>
+    {{input value=title id="title"}}
+    <br><br>
+    <label for="username">Username:</label>
+    {{input value=username id="username"}}
+    <br><br>
+    <label for="caption">Image Caption:</label>
+    {{input value=caption id="caption"}}
+    <br><br>
+    <label for="imageURL">URL to image:</label>
+    {{input value=imageURL id="imageURL"}}
+    <br><br>
+    <button {{action 'savePost1'}} class="button">Add New Post</button>
+  </form>
