@@ -1,5 +1,5 @@
 {{#if isPostShowing}}
-  {{post.title}} by {{post.username}}<br><img src={{post.imageURL}} {{action 'postHide'}}><br>{{post.caption}}
+  <span class="post-title">{{post.title}} by {{post.username}}</span><br><br>{{post.caption}}<br><br><img src={{post.imageURL}}><br><br><span class="hide-post" {{action 'postHide'}}>hide</span>&nbsp;&nbsp;&nbsp;<span class="delete-post" {{action 'destroyPost'}}>delete</span>
 {{else}}
-  <span class="post-detail" {{action 'postShow'}}>{{post.title}} by {{post.username}}</span>
+  <span class="post-label" {{action 'postShow'}}>{{post.title}} by {{post.username}}</span>
 {{/if}}

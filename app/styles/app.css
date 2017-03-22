@@ -48,3 +48,22 @@ img {
   padding: 2%;
   border: 1px solid black;
 }
+
+.post-label, .post-title {
+  font-size: 120%;
+}
+
+.post-label:hover, .post-title:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.hide-post, .delete-post {
+  text-decoration: underline;
+}
+
+.hide-post:hover, .delete-post:hover {
+  cursor: pointer;
+  color: red;
+  text-decoration: underline;
+}
