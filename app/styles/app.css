@@ -1,6 +1,13 @@
-body {
+.full-page {
   background: linear-gradient(#18111D, #3A2E83);
   color: white;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow-y: auto;
 }
 
 img {

@@ -1,0 +1,5 @@
+{{#if isPostShowing}}
+  {{post.title}} by {{post.username}}<br><img src={{post.imageURL}} {{action 'postHide'}}><br>{{post.caption}}
+{{else}}
+  <span class="post-detail" {{action 'postShow'}}>{{post.title}} by {{post.username}}</span>
+{{/if}}

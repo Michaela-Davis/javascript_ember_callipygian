@@ -3,6 +3,6 @@
 
 {{#each model as |post|}}
   <div class="panel">
-    {{post.title}} by {{post.username}}<br><img src={{post.imageURL}}><br>{{post.caption}}
+    {{post-detail post=post}}
   </div>
 {{/each}}
