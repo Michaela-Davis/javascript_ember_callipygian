@@ -79,3 +79,16 @@ img {
 input {
   color: black;
 }
+
+.footer {
+  display: block;
+  padding-bottom: 1%;
+  margin-top: 75px;
+  font-size: 60%;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 37%;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
