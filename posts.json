@@ -1,0 +1,17 @@
+{ "posts": [{
+  "title": "Some dresses",
+  "caption": "Here's some cool dresses",
+  "imageURL": "https://s-media-cache-ak0.pinimg.com/564x/21/8b/b8/218bb867e861f6686b5a1db83a14fc37.jpg",
+  "username": "dress-ninja"
+  }, {
+    "title": "Elaborate Dress",
+    "caption": "Ancient Chinese High Collar White Princess Dancewear and Headwear Complete Set",
+    "imageURL": "https://s-media-cache-ak0.pinimg.com/236x/fd/cb/90/fdcb906e9c6933a530f45271f5a38f22.jpg",
+    "username": "dress-warrior"
+  }, {
+    "title": "Pink and Gold",
+    "caption": "Flowy, pink dress with gold accents",
+    "imageURL": "https://s-media-cache-ak0.pinimg.com/564x/bf/82/8b/bf828b69dd87a2fe2ce350e0cd9e1070.jpg",
+    "username": "dress-sensei"
+  }]
+}
