@@ -1,3 +1,43 @@
+body {
+  background: linear-gradient(#18111D, #3A2E83);
+  color: white;
+}
+
 img {
   max-height: 400px;
+}
+
+#title {
+  float: right;
+  margin-right: 5%;
+  background-color: #511A1A;
+  height: 200px;
+  border-radius: 180px;
+}
+
+#title h1 {
+  vertical-align: middle;
+}
+
+#navbar {
+  background: linear-gradient(#26213E, #18142A);
+  top: 0;
+  float: left;
+  position: fixed;
+  background-color: navy;
+  height: 100%;
+  width: 15%;
+  padding: 2%;
+}
+
+#content {
+  margin-left: 18%;
+}
+
+.panel {
+  width: 40%;
+  background: rgba(28, 27, 32, 0.7);
+  border-radius: 15px;
+  padding: 2%;
+  border: 1px solid black;
 }

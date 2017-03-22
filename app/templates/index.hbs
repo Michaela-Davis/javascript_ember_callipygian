@@ -1,13 +1,8 @@
-<h1>Callipygian BLOG</h1>
+  <h3>Some posts:</h3>
 
-<h3>Some posts:</h3>
 
-<ul>
-  {{#each model as |post|}}
-    <li>{{post.title}} by {{post.username}}<br><img src={{post.imageURL}}><br>{{post.caption}}</li>
-  {{/each}}
-</ul>
-
-{{#link-to 'about'}}About{{/link-to}}
-<br>
-{{#link-to 'contact'}}Contact{{/link-to}}
+{{#each model as |post|}}
+  <div class="panel">
+    {{post.title}} by {{post.username}}<br><img src={{post.imageURL}}><br>{{post.caption}}
+  </div>
+{{/each}}
