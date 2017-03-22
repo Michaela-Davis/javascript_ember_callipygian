@@ -14,12 +14,22 @@ img {
   max-height: 400px;
 }
 
+#callipygian {
+  margin-top: 50px;
+}
+
+#callipygian a {
+  color: white;
+  font-size: 100%;
+}
+
 #blog-title {
   float: right;
   margin-right: 5%;
   background-color: #511A1A;
-  height: 200px;
+  height: 140px;
   border-radius: 180px;
+  font-family: 'Neucha', cursive;
 }
 
 #title h1 {
@@ -35,10 +45,12 @@ img {
   height: 100%;
   width: 15%;
   padding: 2%;
+  font-family: 'Neucha', cursive;
 }
 
 #content {
   margin-left: 18%;
+  font-family: 'Nova Oval', cursive;
 }
 
 .panel {
@@ -49,11 +61,11 @@ img {
   border: 1px solid black;
 }
 
-.post-label, .post-title {
+.post-label, .post-header {
   font-size: 120%;
 }
 
-.post-label:hover, .post-title:hover {
+.post-label:hover, .post-header:hover {
   color: red;
   cursor: pointer;
 }
@@ -68,6 +80,14 @@ img {
   text-decoration: underline;
 }
 
+.post-title {
+  font-size: 130%;
+}
+
+.hide-post {
+  float: right;
+}
+
 .button {
   background-color: black;
 }
@@ -78,6 +98,14 @@ img {
 
 input {
   color: black;
+}
+
+a {
+  font-size: 140%;
+}
+
+a:hover {
+  font-size: 140%;
 }
 
 .footer {
@@ -91,4 +119,5 @@ input {
   text-align: center;
   font-size: 14px;
   color: white;
+  font-family: 'Nova Oval', cursive;
 }
