@@ -1,5 +1,5 @@
 {{#if isPostShowing}}
-  <span class="post-header"><span class="post-title">{{post.title}}</span> by {{post.username}}</span><span class="hide-post" {{action 'postHide'}}>hide</span><br><br>{{post.caption}}<br><br><img src={{post.imageURL}}><br><br>{{post-update post=post update="update"}}<span class="delete-post" {{action 'delete' post}}>delete</span>
+  <span class="post-header"><span class="post-title">{{post.title}}</span> by {{post.username}}</span><span class="hide-post" {{action 'postHide'}}>hide</span><br><br>{{post.caption}}<br><br><img src={{post.imageURL}}><br><br>{{post-update post=post update="update"}}<span class="delete-post" {{action 'delete' post}}>delete</span><hr><p>Comments</p>
 {{else}}
   <span class="post-label" {{action 'postShow'}}><span class="post-title">{{post.title}}</span> by {{post.username}}</span>
 {{/if}}
