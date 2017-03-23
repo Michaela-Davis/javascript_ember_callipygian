@@ -54,7 +54,7 @@ img {
 }
 
 .panel {
-  width: 50%;
+  width: 60%;
   background: rgba(28, 27, 32, 0.7);
   border-radius: 15px;
   padding: 2%;
@@ -98,6 +98,7 @@ img {
 
 input {
   color: black;
+  text-align: left;
 }
 
 a {
@@ -106,6 +107,20 @@ a {
 
 a:hover {
   font-size: 140%;
+}
+
+form {
+  padding: 1%;
+}
+
+li {
+  padding: 1%;
+}
+
+.teaser-image {
+}
+
+.teaser-link {
 }
 
 .footer {
