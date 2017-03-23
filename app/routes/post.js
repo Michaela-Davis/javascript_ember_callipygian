@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     return this.store.findRecord('post', params.post_id);
   },
   actions: {
-    update(post, params) {
+    updatePost(post, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
           post.set(key,params[key]);
@@ -14,7 +14,7 @@ export default Ember.Route.extend({
       post.save();
       this.transitionTo('post');
     },
-    update(comment, params) {
+    updateComment(comment, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
           comment.set(key,params[key]);

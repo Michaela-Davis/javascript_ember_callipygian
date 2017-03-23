@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     hideUpdateForm: function() {
       this.set('isUpdateShowing', false);
     },
-    update(post) {
+    updatePost(post) {
       var params = {
         title: this.get('title'),
         username: this.get('username'),
@@ -17,7 +17,7 @@ export default Ember.Component.extend({
         imageURL: this.get('imageURL')
       };
       this.set('isUpdateShowing', false);
-      this.sendAction('update', post, params);
+      this.sendAction('updatePost', post, params);
     }
   }
 });

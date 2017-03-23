@@ -12,7 +12,7 @@
     <label for="imageURL">URL to image</label>
     {{input value=imageURL id="imageURL" placeholder=post.imageURL}}
     <br><br>
-    <span class="update-post" {{action 'update' post}}>Update</span>&nbsp;&nbsp;&nbsp;<span class="cancel-update" {{action 'hideUpdateForm'}}>Cancel</span>
+    <span class="update-post" {{action 'updatePost' post}}>Update</span>&nbsp;&nbsp;&nbsp;<span class="cancel-update" {{action 'hideUpdateForm'}}>Cancel</span>
   </form>
 {{else}}
   <span class="update-post" {{action 'showUpdateForm'}}>update</span>

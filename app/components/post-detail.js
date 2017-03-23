@@ -2,11 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    update(post, params) {
-      this.sendAction('update', post, params);
+    updatePost(post, params) {
+      this.sendAction('updatePost', post, params);
     },
-    update(comment, params) {
-      this.sendAction('update', comment, params);
+    updateComment(comment, params) {
+      this.sendAction('updateComment', comment, params);
     },
     deletePost(post) {
       if (confirm('Are you sure you want to delete this post?')) {

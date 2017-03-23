@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     hideCommentUpdateForm: function() {
       this.set('isCommentUpdateShowing', false);
     },
-    update(comment) {
+    updateComment(comment) {
       var params = {
         username: this.get('username'),
         content: this.get('content'),
@@ -17,7 +17,7 @@ export default Ember.Component.extend({
         post: this.get('post')
       };
       this.set('isCommentUpdateShowing', false);
-      this.sendAction('update', comment, params);
+      this.sendAction('updateComment', comment, params);
     }
   }
 });

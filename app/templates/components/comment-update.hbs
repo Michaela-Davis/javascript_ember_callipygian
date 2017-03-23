@@ -9,7 +9,7 @@
     <label for="date">Date</label>
     {{input value=date id="date" placeholder=comment.date}}
     <br><br>
-    <span class="update-comment" {{action 'update' comment}}>Update</span>&nbsp;&nbsp;&nbsp;<span class="cancel-update" {{action 'hideCommentUpdateForm'}}>Cancel</span>
+    <span class="update-comment" {{action 'updateComment' comment}}>Update</span>&nbsp;&nbsp;&nbsp;<span class="cancel-update" {{action 'hideCommentUpdateForm'}}>Cancel</span>
   </form>
 {{else}}
   <span class="update-comment" {{action 'showCommentUpdateForm'}}>Update</span>

@@ -4,10 +4,10 @@
 <br><br>
 <img src={{post.imageURL}}>
 <br><br>
-{{post-update post=post update="update"}}
+{{post-update post=post updatePost="updatePost"}}
 <span class="delete-post" {{action 'deletePost' post}}>delete</span>
 <br><br>
 {{#each post.comments as |comment|}}
   {{comment-detail comment=comment destroyComment="destroyComment"}}
-  {{comment-update comment=comment update="update"}}
+  {{comment-update comment=comment updateComment="updateComment"}}
 {{/each}}
