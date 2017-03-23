@@ -1,8 +1,8 @@
-  <h3>Recent posts:</h3>
+<h3>Recent posts:</h3>
 
 
-{{#each model as |post|}}
+{{#each model.posts as |post|}}
   <div class="panel">
-    {{post-detail post=post update='update' destroyPost="destroyPost"}}
+    {{post-teaser post=post}}
   </div>
 {{/each}}

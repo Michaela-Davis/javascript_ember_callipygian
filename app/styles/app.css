@@ -54,15 +54,11 @@ img {
 }
 
 .panel {
-  width: 60%;
+  width: 50%;
   background: rgba(28, 27, 32, 0.7);
   border-radius: 15px;
   padding: 2%;
   border: 1px solid black;
-}
-
-.panel-showing {
-  height: 550px;
 }
 
 .post-label, .post-header {
@@ -74,11 +70,11 @@ img {
   cursor: pointer;
 }
 
-.hide-post, .delete-post, .update-post, .cancel-update {
+.hide-post, .delete-post, .update-post, .cancel-update, .create-comment, .cancel-create {
   text-decoration: underline;
 }
 
-.hide-post:hover, .delete-post:hover, .update-post:hover, .cancel-update:hover {
+.hide-post:hover, .delete-post:hover, .update-post:hover, .cancel-update:hover, .create-comment:hover, .cancel-create:hover {
   cursor: pointer;
   color: red;
   text-decoration: underline;
@@ -110,17 +106,6 @@ a {
 
 a:hover {
   font-size: 140%;
-}
-
-.post-column {
-  width: 40%;
-}
-
-.comments-column {
-  margin-left: 50%;
-  padding: 2%;
-  border-left: solid 1px white;
-  margin-top: -550px;
 }
 
 .footer {

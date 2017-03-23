@@ -1,12 +1,12 @@
-{{#if isPostShowing}}
-<div class="panel-showing">
-  <div class="post-column">
-    <span class="post-header"><span class="post-title">{{post.title}}</span> by {{post.username}}</span><span class="hide-post" {{action 'postHide'}}>hide</span><br><br>{{post.caption}}<br><br><img src={{post.imageURL}}><br><br>{{post-update post=post update="update"}}<span class="delete-post" {{action 'delete' post}}>delete</span>
-  </div>
-  <div class="comments-column">
-    <p>Comments</p>
-  </div>
-</div>
-{{else}}
-  <span class="post-label" {{action 'postShow'}}><span class="post-title">{{post.title}}</span> by {{post.username}}</span>
-{{/if}}
+<span class="post-header"><span class="post-title">{{post.title}}</span> by {{post.username}}</span>
+<br><br>
+{{post.caption}}
+<br><br>
+<img src={{post.imageURL}}>
+<br><br>
+{{post-update post=post update="update"}}
+<span class="delete-post" {{action 'delete' post}}>delete</span>
+<br><br>
+{{#each post.comments as |comment|}}
+  {{comment-detail comment=comment}}
+{{/each}}

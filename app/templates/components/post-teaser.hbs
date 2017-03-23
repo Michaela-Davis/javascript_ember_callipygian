@@ -1,0 +1,5 @@
+{{#if isPostShowing}}
+    <span class="post-header"><span class="post-title">{{post.title}}</span> by {{post.username}}</span><span class="hide-post" {{action 'postHide'}}>hide</span><br><br>{{#link-to 'post' post.id}}{{post.title}} LINK {{/link-to}}<br><br><img src={{post.imageURL}}>
+{{else}}
+  <span class="post-label" {{action 'postShow'}}><span class="post-title">{{post.title}}</span> by {{post.username}}</span>
+{{/if}}

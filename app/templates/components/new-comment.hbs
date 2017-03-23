@@ -1,0 +1,16 @@
+{{#if addNewComment}}
+  <form>
+    <label for="username">Username</label>
+    {{input value=username id="username"}}
+    <br><br>
+    <label for="content">Comment:</label>
+    {{input value=content id="content"}}
+    <br><br>
+    <label for="date">Date</label>
+    {{input value=date id="date" type="date"}}
+    <br><br>
+    <button {{action 'saveComment'}} class="button">Submit!</button>&nbsp;&nbsp;&nbsp;<span class="cancel-create" {{action 'commentFormHide'}}>Cancel</span>
+  </form>
+{{else}}
+  <span class="create-comment" {{action 'commentFormShow'}}>Add Comment</span>
+{{/if}}
