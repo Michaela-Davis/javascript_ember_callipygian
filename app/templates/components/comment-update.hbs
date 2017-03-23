@@ -1,0 +1,16 @@
+{{#if isCommentUpdateShowing}}
+  <form>
+    <label for="username">Username</label>
+    {{input value=username id="username" placeholder=comment.username}}
+    <br><br>
+    <label for="content">Comment</label>
+    {{input value=content id="content" placeholder=comment.content}}
+    <br><br>
+    <label for="date">Date</label>
+    {{input value=date id="date" placeholder=comment.date}}
+    <br><br>
+    <span class="update-comment" {{action 'update' comment}}>Update</span>&nbsp;&nbsp;&nbsp;<span class="cancel-update" {{action 'hideCommentUpdateForm'}}>Cancel</span>
+  </form>
+{{else}}
+  <span class="update-comment" {{action 'showCommentUpdateForm'}}>Update</span>
+{{/if}}

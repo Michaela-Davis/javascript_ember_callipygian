@@ -70,11 +70,11 @@ img {
   cursor: pointer;
 }
 
-.hide-post, .delete-post, .update-post, .cancel-update, .create-comment, .cancel-create, .delete-comment {
+.hide-post, .delete-post, .update-post, .cancel-update, .create-comment, .cancel-create, .delete-comment, .update-comment {
   text-decoration: underline;
 }
 
-.hide-post:hover, .delete-post:hover, .update-post:hover, .cancel-update:hover, .create-comment:hover, .cancel-create:hover, .delete-comment:hover {
+.hide-post:hover, .delete-post:hover, .update-post:hover, .cancel-update:hover, .create-comment:hover, .cancel-create:hover, .delete-comment:hover, .update-comment:hover {
   cursor: pointer;
   color: red;
   text-decoration: underline;
