@@ -54,11 +54,15 @@ img {
 }
 
 .panel {
-  width: 40%;
+  width: 60%;
   background: rgba(28, 27, 32, 0.7);
   border-radius: 15px;
   padding: 2%;
   border: 1px solid black;
+}
+
+.panel-showing {
+  height: 550px;
 }
 
 .post-label, .post-header {
@@ -106,6 +110,17 @@ a {
 
 a:hover {
   font-size: 140%;
+}
+
+.post-column {
+  width: 40%;
+}
+
+.comments-column {
+  margin-left: 50%;
+  padding: 2%;
+  border-left: solid 1px white;
+  margin-top: -550px;
 }
 
 .footer {
