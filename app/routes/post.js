@@ -21,7 +21,7 @@ export default Ember.Route.extend({
         }
       });
       comment.save();
-      this.transitionTo('comment');
+      this.transitionTo('post');
     },
     destroyPost(post) {
       var comment_deletions = post.get('comments').map(function(comment) {
