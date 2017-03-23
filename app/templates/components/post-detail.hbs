@@ -5,8 +5,9 @@
 <img src={{post.imageURL}}>
 <br><br>
 {{post-update post=post update="update"}}
-<span class="delete-post" {{action 'delete' post}}>delete</span>
+<span class="delete-post" {{action 'deletePost' post}}>delete</span>
 <br><br>
 {{#each post.comments as |comment|}}
-  {{comment-detail comment=comment}}
+  {{comment-detail comment=comment destroyComment="destroyComment"}}
+
 {{/each}}
